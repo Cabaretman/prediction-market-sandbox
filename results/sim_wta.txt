@@ -1,0 +1,19 @@
+===== KXWTASETWINNER: 899 set-1 markets (880 with anchor tape); train 449 / test 450 =====
+Top 5 settings on TRAIN (size, cap, band, flatten, exit_band, min_spread):
+   (20, 50, 0.2, False, 0.1, 0.03)  P&L $   -1262  -3.60c/contract
+   (20, 50, 0.2, False, 0.0, 0.03)  P&L $   -1286  -3.84c/contract
+   (20, 50, 0.1, False, 0.0, 0.03)  P&L $   -1403  -3.57c/contract
+   (20, 50, 0.2, False, 0.0, 0.02)  P&L $   -1450  -3.46c/contract
+   (20, 50, 0.2, False, 0.1, 0.02)  P&L $   -1488  -3.39c/contract
+   ...worst: (50, 150, 0.1, True, 0.1, 0.02) $-6437; share of settings profitable on train: 0%
+
+Chosen: Params(min_spread=0.03, pull_move=0.02, pull_secs=20.0, latency=1.0, size=20, cap=50, fill_rule='harsh', band=0.2, flatten_at=1000000000, flatten_to=0, exit_band=0.1)
+OUT-OF-SAMPLE (test half):
+  optimistic, 1s latency             events= 450 fills=  4466 contracts=    44880 share= 0.2% | P&L $    -490 = -1.09c/contract (±1.48) | +1m -0.45c +5m -0.34c | win-events 45% maxDD $697 max|inv| 132
+  harsh, 1s latency                  events= 450 fills=  4244 contracts=    42500 share= 0.2% | P&L $    -617 = -1.45c/contract (±1.53) | +1m -0.63c +5m -0.60c | win-events 44% maxDD $809 max|inv| 120
+  very_harsh, 1s latency             events= 450 fills=  2698 contracts=    28348 share= 0.1% | P&L $    -832 = -2.93c/contract (±2.09) | +1m -1.54c +5m -1.87c | win-events 39% maxDD $1013 max|inv| 101
+  harsh, 3s latency                  events= 450 fills=  4144 contracts=    41608 share= 0.2% | P&L $    -728 = -1.75c/contract (±1.53) | +1m -0.75c +5m -0.68c | win-events 44% maxDD $934 max|inv| 138
+  harsh, no anchor pull              events= 450 fills=  8674 contracts=    89495 share= 0.4% | P&L $   -2057 = -2.30c/contract (±0.82) | +1m -1.63c +5m -1.59c | win-events 38% maxDD $2126 max|inv| 190
+For reference, TRAIN with chosen setting:
+  harsh, 1s latency (train)          events= 449 fills=  3213 contracts=    35069 share= 0.4% | P&L $   -1262 = -3.60c/contract (±1.79) | +1m -0.98c +5m -0.86c | win-events 39% maxDD $1370 max|inv| 119
+

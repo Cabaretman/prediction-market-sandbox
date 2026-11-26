@@ -1,0 +1,19 @@
+===== KXATPSETWINNER: 966 set-1 markets (944 with anchor tape); train 483 / test 483 =====
+Top 5 settings on TRAIN (size, cap, band, flatten, exit_band, min_spread):
+   (50, 50, 0.2, False, 0.0, 0.03)  P&L $      37  +0.08c/contract
+   (50, 50, 0.2, False, 0.0, 0.02)  P&L $      14  +0.03c/contract
+   (20, 50, 0.2, False, 0.0, 0.03)  P&L $    -115  -0.37c/contract
+   (20, 50, 0.2, False, 0.0, 0.02)  P&L $    -137  -0.41c/contract
+   (20, 50, 0.1, False, 0.0, 0.03)  P&L $    -201  -0.56c/contract
+   ...worst: (50, 50, 0.1, True, 0.1, 0.02) $-4326; share of settings profitable on train: 3%
+
+Chosen: Params(min_spread=0.03, pull_move=0.02, pull_secs=20.0, latency=1.0, size=50, cap=50, fill_rule='harsh', band=0.2, flatten_at=1000000000, flatten_to=0, exit_band=0.0)
+OUT-OF-SAMPLE (test half):
+  optimistic, 1s latency             events= 483 fills=  4054 contracts=    70517 share= 0.3% | P&L $    -963 = -1.37c/contract (±1.34) | +1m -0.45c +5m -0.31c | win-events 42% maxDD $1272 max|inv| 50
+  harsh, 1s latency                  events= 483 fills=  3794 contracts=    66001 share= 0.3% | P&L $    -988 = -1.50c/contract (±1.40) | +1m -0.51c +5m -0.37c | win-events 42% maxDD $1293 max|inv| 50
+  very_harsh, 1s latency             events= 483 fills=  2374 contracts=    40728 share= 0.2% | P&L $    -832 = -2.04c/contract (±2.08) | +1m -1.57c +5m -1.30c | win-events 39% maxDD $1009 max|inv| 50
+  harsh, 3s latency                  events= 483 fills=  3710 contracts=    64223 share= 0.3% | P&L $   -1274 = -1.98c/contract (±1.43) | +1m -0.69c +5m -0.71c | win-events 41% maxDD $1561 max|inv| 50
+  harsh, no anchor pull              events= 483 fills=  9676 contracts=   156803 share= 0.7% | P&L $   -4496 = -2.87c/contract (±0.59) | +1m -2.17c +5m -2.22c | win-events 31% maxDD $4638 max|inv| 50
+For reference, TRAIN with chosen setting:
+  harsh, 1s latency (train)          events= 483 fills=  2621 contracts=    46550 share= 1.5% | P&L $      37 = +0.08c/contract (±1.79) | +1m +2.43c +5m +1.88c | win-events 40% maxDD $829 max|inv| 50
+

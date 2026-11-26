@@ -1,0 +1,10 @@
+== KXATPSETWINNER ==
+  FRONT OF QUEUE, train (Jan-Jun)    events= 483 fills=  2863 contracts=    51269 share= 1.6% | P&L $     521 = +1.02c/contract (±1.61) | +1m +2.96c +5m +2.60c | win-events 41% maxDD $653 max|inv| 50
+  newcomer (improve 1c), train (Jan-Jun) events= 483 fills=  2837 contracts=    50866 share= 1.6% | P&L $      14 = +0.03c/contract (±1.61) | +1m +1.97c +5m +1.61c | win-events 40% maxDD $862 max|inv| 50
+  FRONT OF QUEUE, test (Jul-Nov)     events= 483 fills=  5341 contracts=    94126 share= 0.4% | P&L $    -662 = -0.70c/contract (±0.99) | +1m +0.07c +5m +0.14c | win-events 44% maxDD $948 max|inv| 50
+  newcomer (improve 1c), test (Jul-Nov) events= 483 fills=  5265 contracts=    92490 share= 0.4% | P&L $   -1658 = -1.79c/contract (±1.01) | +1m -0.84c +5m -0.80c | win-events 40% maxDD $1860 max|inv| 50
+== KXWTASETWINNER ==
+  FRONT OF QUEUE, train (Jan-Jun)    events= 449 fills=  3681 contracts=    68133 share= 0.8% | P&L $   -1382 = -2.03c/contract (±1.23) | +1m -0.56c +5m -0.19c | win-events 40% maxDD $1455 max|inv| 50
+  newcomer (improve 1c), train (Jan-Jun) events= 449 fills=  3586 contracts=    66832 share= 0.8% | P&L $   -2000 = -2.99c/contract (±1.22) | +1m -1.54c +5m -1.18c | win-events 37% maxDD $2021 max|inv| 50
+  FRONT OF QUEUE, test (Jul-Nov)     events= 450 fills=  4778 contracts=    86095 share= 0.4% | P&L $     -71 = -0.08c/contract (±1.02) | +1m -0.04c +5m -0.18c | win-events 46% maxDD $631 max|inv| 50
+  newcomer (improve 1c), test (Jul-Nov) events= 450 fills=  4712 contracts=    85222 share= 0.4% | P&L $   -1003 = -1.18c/contract (±1.02) | +1m -0.94c +5m -1.00c | win-events 43% maxDD $1303 max|inv| 50
