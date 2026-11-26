@@ -1,0 +1,38 @@
+300 matches, 869,157 maker fills
+
+-- maker BOUGHT the side priced 0.80-0.90 (favourite bid filled)
+  +1m                                           +0.06c ± 0.25c  t=+0.49   (  12.1M contracts)
+  +5m                                           +0.61c ± 0.65c  t=+1.82   (  12.1M contracts)
+  settlement                                    +4.02c ± 4.76c  t=+1.66   (  12.1M contracts)
+-- maker BOUGHT the side priced 0.10-0.20 (longshot bid filled)
+  +1m                                           +0.26c ± 0.33c  t=+1.51   (  11.5M contracts)
+  +5m                                           -0.02c ± 1.11c  t=-0.03   (  11.5M contracts)
+  settlement                                    -2.03c ± 5.27c  t=-0.76   (  11.5M contracts)
+
+-- maker BOUGHT the side priced 0.90-0.95 (favourite bid filled)
+  +1m                                           +0.43c ± 0.19c  t=+4.47   (   6.7M contracts)
+  +5m                                           +1.00c ± 0.81c  t=+2.44   (   6.7M contracts)
+  settlement                                    +3.93c ± 2.90c  t=+2.65   (   6.7M contracts)
+-- maker BOUGHT the side priced 0.05-0.10 (longshot bid filled)
+  +1m                                           +0.19c ± 0.31c  t=+1.19   (   7.2M contracts)
+  +5m                                           -0.08c ± 1.12c  t=-0.13   (   7.2M contracts)
+  settlement                                    -5.02c ± 2.01c  t=-4.90   (   7.2M contracts)
+
+-- maker BOUGHT the side priced 0.95-0.99 (favourite bid filled)
+  +1m                                           +0.04c ± 0.23c  t=+0.31   (   6.6M contracts)
+  +5m                                           +0.22c ± 0.42c  t=+1.05   (   6.6M contracts)
+  settlement                                    +2.42c ± 1.06c  t=+4.49   (   6.6M contracts)
+-- maker BOUGHT the side priced 0.01-0.05 (longshot bid filled)
+  +1m                                           +0.38c ± 0.16c  t=+4.76   (   7.7M contracts)
+  +5m                                           +0.44c ± 0.40c  t=+2.16   (   7.7M contracts)
+  settlement                                    -2.63c ± 0.73c  t=-7.04   (   7.7M contracts)
+
+-- maker BOUGHT the side priced 0.80-0.99 (favourite bid filled)
+  +1m                                           +0.15c ± 0.15c  t=+2.04   (  25.4M contracts)
+  +5m                                           +0.61c ± 0.42c  t=+2.83   (  25.4M contracts)
+  settlement                                    +3.58c ± 2.82c  t=+2.49   (  25.4M contracts)
+-- maker BOUGHT the side priced 0.01-0.20 (longshot bid filled)
+  +1m                                           +0.27c ± 0.19c  t=+2.77   (  26.4M contracts)
+  +5m                                           +0.10c ± 0.59c  t=+0.33   (  26.4M contracts)
+  settlement                                    -3.03c ± 2.74c  t=-2.17   (  26.4M contracts)
+

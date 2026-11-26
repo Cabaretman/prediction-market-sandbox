@@ -24,10 +24,10 @@ def iso(s):
     return datetime.fromisoformat(s.replace("Z", "+00:00")).timestamp()
 
 
-def main():
-    ms = {m["event"]: m for m in ka.load("data/kalshi/KXATPMATCH.jsonl")}
+def main(series="KXATPMATCH"):
+    ms = {m["event"]: m for m in ka.load(f"data/kalshi/{series}.jsonl")}
     rows = []
-    for line in open("data/kalshi/trades_KXATPMATCH.jsonl"):
+    for line in open(f"data/kalshi/trades_{series}.jsonl"):
         r = json.loads(line)
         m = ms.get(r["event"])
         if m is None or not r["trades"]:
@@ -83,4 +83,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(*(sys.argv[1:] or ["KXATPMATCH"]))

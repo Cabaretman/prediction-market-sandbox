@@ -1,0 +1,54 @@
+299 matches, 945,467 trades
+
+== by recent 5-min move ==
+  flat: maker +1m                               -0.03c ± 0.09c  t=-0.70   (  21.1M contracts)
+  flat: maker +5m                               -0.42c ± 0.55c  t=-1.51   (  21.1M contracts)
+  <2c: maker +1m                                -0.00c ± 0.19c  t=-0.04   (  37.6M contracts)
+  <2c: maker +5m                                -0.14c ± 0.34c  t=-0.82   (  37.6M contracts)
+  2-5c: maker +1m                               -0.01c ± 0.11c  t=-0.18   (  53.1M contracts)
+  2-5c: maker +5m                               -0.00c ± 0.40c  t=-0.02   (  53.1M contracts)
+  >5c: maker +1m                                +0.00c ± 0.11c  t=+0.04   (  97.0M contracts)
+  >5c: maker +5m                                +0.07c ± 0.46c  t=+0.29   (  97.0M contracts)
+
+== by spread ==
+  1c: maker +1m                                 -0.03c ± 0.08c  t=-0.69   ( 160.9M contracts)
+  1c: maker +5m                                 -0.08c ± 0.29c  t=-0.53   ( 160.9M contracts)
+  2c: maker +1m                                 -0.01c ± 0.15c  t=-0.10   (  26.1M contracts)
+  2c: maker +5m                                 +0.02c ± 0.45c  t=+0.07   (  26.1M contracts)
+  3c+: maker +1m                                +0.17c ± 0.16c  t=+2.08   (  21.8M contracts)
+  3c+: maker +5m                                +0.18c ± 0.44c  t=+0.81   (  21.8M contracts)
+
+== by price level ==
+  (0.0, 0.2]: maker +1m                         +0.21c ± 0.11c  t=+3.54   (  28.6M contracts)
+  (0.0, 0.2]: maker +5m                         +0.17c ± 0.49c  t=+0.69   (  28.6M contracts)
+  (0.2, 0.4]: maker +1m                         -0.15c ± 0.19c  t=-1.49   (  45.1M contracts)
+  (0.2, 0.4]: maker +5m                         +0.21c ± 0.51c  t=+0.82   (  45.1M contracts)
+  (0.4, 0.6]: maker +1m                         -0.02c ± 0.11c  t=-0.34   (  54.4M contracts)
+  (0.4, 0.6]: maker +5m                         -0.28c ± 0.48c  t=-1.13   (  54.4M contracts)
+  (0.6, 0.8]: maker +1m                         -0.10c ± 0.16c  t=-1.20   (  45.6M contracts)
+  (0.6, 0.8]: maker +5m                         -0.46c ± 0.68c  t=-1.33   (  45.6M contracts)
+  (0.8, 1.0]: maker +1m                         +0.14c ± 0.10c  t=+2.70   (  35.1M contracts)
+  (0.8, 1.0]: maker +5m                         +0.38c ± 0.59c  t=+1.28   (  35.1M contracts)
+
+== by recent flow ==
+  quiet: maker +1m                              +0.01c ± 0.08c  t=+0.37   (  62.2M contracts)
+  quiet: maker +5m                              +0.05c ± 0.29c  t=+0.35   (  62.2M contracts)
+  normal: maker +1m                             -0.06c ± 0.13c  t=-0.88   (  71.6M contracts)
+  normal: maker +5m                             -0.01c ± 0.40c  t=-0.07   (  71.6M contracts)
+  busy: maker +1m                               +0.03c ± 0.17c  t=+0.33   (  75.0M contracts)
+  busy: maker +5m                               -0.14c ± 0.61c  t=-0.44   (  75.0M contracts)
+
+== Rule chosen on TRAIN half: quote only in 7 of 35 (move x spread x flow) cells ==
+     ('flat', '1c', 'normal')
+     ('<2c', '2c', 'busy')
+     ('<2c', '3c+', 'quiet')
+     ('<2c', '3c+', 'normal')
+     ('2-5c', '1c', 'busy')
+     ('2-5c', '3c+', 'normal')
+     ('>5c', '3c+', 'normal')
+TEST half results:
+  all trades (always quoting)                   +0.21c ± 0.32c  t=+1.29   (  95.1M contracts)
+  rule: quote only in chosen cells, +1m         -0.07c ± 0.32c  t=-0.40   (  13.4M contracts)
+  rule: quote only in chosen cells, +5m         -0.43c ± 0.85c  t=-1.00   (  13.4M contracts)
+  rule: chosen cells, to settlement             +7.00c ± 4.74c  t=+2.89   (  13.4M contracts)
+  outside chosen cells, +5m                     +0.31c ± 0.31c  t=+2.00   (  81.7M contracts)

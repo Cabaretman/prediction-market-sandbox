@@ -1,0 +1,32 @@
+299 matches, 816998 trades, 111,233,403 contracts
+
+--- ALL in-play trades: 816998 trades, 111,233,403 contracts
+  spread captured vs prior mid (no fee)       +1.72c ± 0.24c  t=+14.07
+  maker P&L marked at mid +1m (after fee)     +0.04c ± 0.09c  t=+0.86
+  maker P&L marked at mid +5m (after fee)     +0.00c ± 0.31c  t=+0.02
+  maker P&L marked at mid +15m (after fee)    -0.01c ± 0.70c  t=-0.03
+  maker P&L held to settlement (after fee)    +0.41c ± 3.10c  t=+0.26
+--- taker order size <10 contracts: 324669 trades, 1,043,077 contracts
+  spread captured vs prior mid (no fee)       +1.97c ± 0.22c  t=+17.42
+  maker P&L marked at mid +1m (after fee)     +0.13c ± 0.13c  t=+2.07
+  maker P&L marked at mid +5m (after fee)     -0.05c ± 0.41c  t=-0.24
+  maker P&L marked at mid +15m (after fee)    -0.07c ± 1.33c  t=-0.11
+  maker P&L held to settlement (after fee)    -1.11c ± 5.04c  t=-0.43
+--- taker order size 10-100 contracts: 326894 trades, 13,773,907 contracts
+  spread captured vs prior mid (no fee)       +1.46c ± 0.12c  t=+23.63
+  maker P&L marked at mid +1m (after fee)     +0.11c ± 0.07c  t=+3.04
+  maker P&L marked at mid +5m (after fee)     +0.02c ± 0.29c  t=+0.11
+  maker P&L marked at mid +15m (after fee)    -0.02c ± 0.78c  t=-0.04
+  maker P&L held to settlement (after fee)    +0.59c ± 3.36c  t=+0.34
+--- taker order size 100-1000 contracts: 144049 trades, 45,730,709 contracts
+  spread captured vs prior mid (no fee)       +1.54c ± 0.17c  t=+17.84
+  maker P&L marked at mid +1m (after fee)     +0.10c ± 0.06c  t=+2.95
+  maker P&L marked at mid +5m (after fee)     +0.05c ± 0.27c  t=+0.40
+  maker P&L marked at mid +15m (after fee)    +0.08c ± 0.67c  t=+0.25
+  maker P&L held to settlement (after fee)    +0.68c ± 2.96c  t=+0.45
+--- taker order size >1000 contracts: 21386 trades, 50,685,710 contracts
+  spread captured vs prior mid (no fee)       +1.96c ± 0.42c  t=+9.05
+  maker P&L marked at mid +1m (after fee)     -0.04c ± 0.16c  t=-0.44
+  maker P&L marked at mid +5m (after fee)     -0.05c ± 0.43c  t=-0.21
+  maker P&L marked at mid +15m (after fee)    -0.09c ± 0.84c  t=-0.22
+  maker P&L held to settlement (after fee)    +0.16c ± 3.38c  t=+0.09

@@ -1,0 +1,23 @@
+19970 matches with a clean pre-match quote
+
+== 1. Elo (built from Kalshi results) vs Kalshi pre-match price ==
+  test half, both players >=10 prior matches: 7031 matches
+  log-loss  Kalshi 0.6130   Elo 0.6762
+  best Elo weight on train half: 0.00; test log-loss blend 0.6130
+    [KXATPCHALLENGERMATCH] n=3988  Kalshi 0.6181  Elo 0.6811
+    [KXATPMATCH] n=1751  Kalshi 0.6131  Elo 0.6860
+    [KXWTAMATCH] n=1292  Kalshi 0.5970  Elo 0.6475
+  bet blend>ask+fee+0c (test half)                 n=0
+  bet blend>ask+fee+2c (test half)                 n=0
+  bet blend>ask+fee+4c (test half)                 n=0
+
+== 2. Pre-match line movement ==
+  18461 matches with quotes at T-6h, T-2h, start
+  corr(move 6h->2h, move 2h->start) = -0.024
+  log-loss at T-6h 0.5828  T-2h 0.5825  start 0.5825
+  Elo vs T-6h price, |diff|>=3c: P&L               n=  1491 matches= 1491   -0.74c ± 2.49c  t=-0.58
+     ... closing line value (close mid - entry)    n=  1491 matches= 1491   -0.54c ± 0.08c  t=-13.46
+  Elo vs T-6h price, |diff|>=6c: P&L               n=  1209 matches= 1209   -1.26c ± 2.54c  t=-0.97
+     ... closing line value (close mid - entry)    n=  1209 matches= 1209   -0.54c ± 0.09c  t=-11.69
+  Elo vs T-6h price, |diff|>=10c: P&L              n=   898 matches=  898   -1.26c ± 2.70c  t=-0.91
+     ... closing line value (close mid - entry)    n=   898 matches=  898   -0.50c ± 0.11c  t=-9.12
