@@ -1,0 +1,42 @@
+298 set-1 markets, 70,408 trades, 9.6M contracts
+
+--- ALL
+  spread captured (no fee)                      +2.85c ± 0.50c  t=+11.20   (   9.6M contracts)
+  maker +1m                                     +0.61c ± 0.35c  t=+3.45   (   9.6M contracts)
+  maker +5m                                     +0.95c ± 1.05c  t=+1.77   (   9.6M contracts)
+  maker to settlement                           +0.74c ± 6.02c  t=+0.24   (   9.6M contracts)
+--- taker size <10
+  spread captured (no fee)                      +4.28c ± 0.41c  t=+20.61   (   0.1M contracts)
+  maker +1m                                     +0.22c ± 0.28c  t=+1.54   (   0.1M contracts)
+  maker +5m                                     +0.62c ± 0.77c  t=+1.56   (   0.1M contracts)
+  maker to settlement                           -0.15c ± 4.13c  t=-0.07   (   0.1M contracts)
+--- taker size 10-100
+  spread captured (no fee)                      +3.51c ± 0.47c  t=+14.79   (   2.0M contracts)
+  maker +1m                                     +0.45c ± 0.24c  t=+3.70   (   2.0M contracts)
+  maker +5m                                     +0.04c ± 1.21c  t=+0.07   (   2.0M contracts)
+  maker to settlement                           -0.38c ± 6.81c  t=-0.11   (   2.0M contracts)
+--- taker size 100-1000
+  spread captured (no fee)                      +2.84c ± 0.53c  t=+10.57   (   3.7M contracts)
+  maker +1m                                     +0.59c ± 0.29c  t=+3.99   (   3.7M contracts)
+  maker +5m                                     +0.74c ± 0.93c  t=+1.55   (   3.7M contracts)
+  maker to settlement                           +0.84c ± 6.14c  t=+0.27   (   3.7M contracts)
+--- taker size >1000
+  spread captured (no fee)                      +2.47c ± 1.09c  t=+4.45   (   3.9M contracts)
+  maker +1m                                     +0.73c ± 0.64c  t=+2.26   (   3.9M contracts)
+  maker +5m                                     +1.63c ± 1.63c  t=+1.96   (   3.9M contracts)
+  maker to settlement                           +1.24c ± 6.84c  t=+0.36   (   3.9M contracts)
+--- quoted spread 1c
+  spread captured (no fee)                      +2.35c ± 0.84c  t=+5.50   (   3.3M contracts)
+  maker +1m                                     +0.19c ± 0.47c  t=+0.77   (   3.3M contracts)
+  maker +5m                                     +0.00c ± 1.40c  t=+0.01   (   3.3M contracts)
+  maker to settlement                           -1.07c ± 6.10c  t=-0.34   (   3.3M contracts)
+--- quoted spread 2-3c
+  spread captured (no fee)                      +3.42c ± 0.84c  t=+8.01   (   3.2M contracts)
+  maker +1m                                     +0.74c ± 0.55c  t=+2.65   (   3.2M contracts)
+  maker +5m                                     +1.47c ± 1.51c  t=+1.90   (   3.2M contracts)
+  maker to settlement                           +1.33c ± 6.91c  t=+0.38   (   3.2M contracts)
+--- quoted spread 4c+
+  spread captured (no fee)                      +2.79c ± 0.82c  t=+6.69   (   3.2M contracts)
+  maker +1m                                     +0.93c ± 0.47c  t=+3.88   (   3.2M contracts)
+  maker +5m                                     +1.42c ± 1.20c  t=+2.31   (   3.2M contracts)
+  maker to settlement                           +2.02c ± 5.62c  t=+0.71   (   3.2M contracts)
