@@ -1,0 +1,42 @@
+pre-match heavy favourites, all tiers: 1765 matches
+
+[90-93c] n=754  won 92.971% vs price 91.658%  (losses 53)
+     all                                           n=   754 matches=  754   +0.06c ± 1.91c  t=+0.06
+     earlier half                                  n=   361 matches=  361   +0.03c ± 2.68c  t=+0.02
+     later half                                    n=   393 matches=  393   +0.09c ± 2.57c  t=+0.07
+      ATP            n= 104 won 0.894 vs 0.917  P&L -3.42c
+      ATPCHALLENGER  n= 281 won 0.961 vs 0.917  P&L +3.12c
+      ITF            n=  90 won 0.900 vs 0.917  P&L -3.04c
+      ITFW           n=  90 won 0.922 vs 0.917  P&L -0.75c
+      WTA            n= 130 won 0.915 vs 0.915  P&L -1.14c
+      WTACHALLENGER  n=  59 won 0.932 vs 0.917  P&L +0.28c
+[93-95c] n=536  won 94.963% vs price 94.065%  (losses 27)
+     all                                           n=   536 matches=  536   -0.19c ± 1.87c  t=-0.20
+     earlier half                                  n=   282 matches=  282   +0.16c ± 2.52c  t=+0.13
+     later half                                    n=   254 matches=  254   -0.58c ± 2.93c  t=-0.39
+      ATP            n=  66 won 0.924 vs 0.941  P&L -2.58c
+      ATPCHALLENGER  n= 204 won 0.951 vs 0.941  P&L -0.15c
+      ITF            n=  60 won 0.917 vs 0.940  P&L -3.54c
+      ITFW           n=  63 won 0.952 vs 0.940  P&L +0.07c
+      WTA            n=  86 won 0.965 vs 0.941  P&L +1.45c
+      WTACHALLENGER  n=  57 won 0.982 vs 0.941  P&L +3.19c
+[95-97c] n=341  won 98.827% vs price 96.054%  (losses 4)
+     all                                           n=   341 matches=  341   +1.89c ± 1.18c  t=+3.14
+     earlier half                                  n=   148 matches=  148   +0.96c ± 2.35c  t=+0.80
+     later half                                    n=   193 matches=  193   +2.60c ± 1.01c  t=+5.03
+      ATP            n=  38 won 0.974 vs 0.961  P&L +0.51c
+      ATPCHALLENGER  n= 133 won 0.992 vs 0.961  P&L +2.30c
+      ITF            n=  39 won 1.000 vs 0.961  P&L +2.99c
+      ITFW           n=  32 won 1.000 vs 0.961  P&L +2.85c
+      WTA            n=  54 won 0.981 vs 0.961  P&L +1.26c
+      WTACHALLENGER  n=  45 won 0.978 vs 0.960  P&L +0.93c
+[97-99.5c] n=73  won 97.260% vs price 98.055%  (losses 2)
+     all                                           n=    73 matches=   73   -1.54c ± 3.65c  t=-0.83
+     earlier half                                  n=    51 matches=   51   -0.85c ± 3.83c  t=-0.43
+     later half                                    n=    22 matches=   22   -3.15c ± 8.82c  t=-0.70
+      ATP            n=  14 won 0.929 vs 0.981  P&L -6.01c
+      ATPCHALLENGER  n=  33 won 0.970 vs 0.980  P&L -1.82c
+      ITF            n=   6 won 1.000 vs 0.981  P&L +1.24c
+      ITFW           n=  10 won 1.000 vs 0.982  P&L +0.93c
+      WTA            n=   4 won 1.000 vs 0.978  P&L +1.63c
+      WTACHALLENGER  n=   6 won 1.000 vs 0.980  P&L +1.40c
