@@ -1,0 +1,12 @@
+== pre: by volume traded so far (quintiles) ==
+  lowest 20%  win 0.947 vs price 0.920                                                   n=   998 matches=  998   +1.44c ± 1.40c  t=+2.02
+  20-40%      win 0.926 vs price 0.923                                                   n=   309 matches=  309   -0.84c ± 2.97c  t=-0.56
+  40-60%      win 0.908 vs price 0.925                                                   n=   130 matches=  130   -2.77c ± 5.14c  t=-1.06
+  60-80%      win 0.952 vs price 0.922                                                   n=    63 matches=   63   +1.98c ± 5.32c  t=+0.73
+  top 20%     win 0.889 vs price 0.921                                                   n=    18 matches=   18   -4.25c ± 14.28c  t=-0.58
+== inplay: by volume traded so far (quintiles) ==
+  lowest 20%  win 0.916 vs price 0.905                                                   n=  3110 matches= 3110   -0.18c ± 0.99c  t=-0.36
+  20-40%      win 0.900 vs price 0.899                                                   n=  3798 matches= 3798   -1.23c ± 0.99c  t=-2.42
+  40-60%      win 0.902 vs price 0.900                                                   n=  3977 matches= 3977   -1.05c ± 0.90c  t=-2.29
+  60-80%      win 0.907 vs price 0.901                                                   n=  4044 matches= 4044   -0.74c ± 0.90c  t=-1.60
+  top 20%     win 0.904 vs price 0.903                                                   n=  4090 matches= 4090   -1.13c ± 0.89c  t=-2.49

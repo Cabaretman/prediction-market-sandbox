@@ -82,7 +82,8 @@ def norm_candle(c):
 
 def main(series_list):
     os.makedirs("data/kalshi", exist_ok=True)
-    for series in series_list:
+    for spec in series_list:
+        series, _, cap = spec.partition(":")   # "SERIES:N" = random sample of N events
         fn = f"data/kalshi/{series}.jsonl"
         done = set()
         if os.path.exists(fn):
@@ -94,8 +95,13 @@ def main(series_list):
             events.setdefault(m["event_ticker"], []).append(m)
         print(f"{series}: {len(ms)} markets, {len(events)} events, "
               f"{len(done)} already done", flush=True)
+        items = sorted(events.items())
+        if cap:
+            import random
+            random.Random(7).shuffle(items)
+            items = items[:int(cap)]
         with open(fn, "a") as out:
-            for i, (ev, mk) in enumerate(sorted(events.items())):
+            for i, (ev, mk) in enumerate(items):
                 if ev in done or len(mk) != 2:
                     continue
                 if not all(m.get("result") in ("yes", "no") for m in mk):
