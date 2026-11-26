@@ -1,0 +1,7 @@
+PRE-MATCH runs=15 events=10
+   run length (minutes): {'count': 15.0, 'mean': 21.1, 'std': 25.1, 'min': 1.0, '50%': 10.0, '75%': 33.0, '90%': 50.0, 'max': 88.0}
+   runs lasting >=3 min: 12  median profit in those: 0.8 c
+IN-PLAY runs=253 events=144
+   run length (minutes): {'count': 253.0, 'mean': 2.7, 'std': 7.0, 'min': 1.0, '50%': 1.0, '75%': 2.0, '90%': 4.0, 'max': 94.0}
+   runs lasting >=3 min: 57  median profit in those: 1.72 c
+total exact-score events analysed: 949

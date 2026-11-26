@@ -15,7 +15,20 @@ import unicodedata
 
 import numpy as np
 import pandas as pd
-from scipy.optimize import brentq
+
+
+def brentq(f, lo, hi, tol=1e-9):
+    flo = f(lo)
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        fm = f(mid)
+        if (fm > 0) == (flo > 0):
+            lo, flo = mid, fm
+        else:
+            hi = mid
+        if hi - lo < tol:
+            break
+    return (lo + hi) / 2
 
 import kalshi_analyze as ka
 

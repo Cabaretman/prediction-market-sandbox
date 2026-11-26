@@ -1,0 +1,62 @@
+anchor matches: 9951
+
+===== 1. Model-free arbitrage (exact score vs match market) =====
+  events with any arb minute: 143 (minutes: 984), by kind:
+                      events  minutes  median_best_profit
+kind                                                     
+A-scores + match NO       74      358            0.012430
+B-scores + match YES      78      584            0.012166
+all scores                 5       42            0.006151
+
+===== 2. Exact score: market vs independent-sets model (T-10m) =====
+  914 events, 3566 score-markets; mean sum of mids per event 0.886
+ best-of-3:
+   went the distance: n=1395 win 0.184  market 0.186  model 0.228
+   straight sets: n=1399 win 0.310  market 0.306  model 0.270
+  -- TRAIN (first half): n=1396  log-loss market mid 0.5230  model 0.5289
+       bet when model edge > 2c after fee          n=   458 matches=  274   +1.12c ± 4.50c  t=+0.49
+       bet when model edge > 4c after fee          n=   120 matches=   91   -1.09c ± 8.56c  t=-0.25
+       bet when model edge > 7c after fee          n=    16 matches=   10   +1.14c ± 16.12c  t=+0.14
+  -- TEST (second half): n=1398  log-loss market mid 0.4874  model 0.4961
+       bet when model edge > 2c after fee          n=   603 matches=  317   -3.00c ± 4.06c  t=-1.45
+       bet when model edge > 4c after fee          n=   271 matches=  186   -3.96c ± 5.51c  t=-1.41
+       bet when model edge > 7c after fee          n=    28 matches=   23   -2.70c ± 13.54c  t=-0.39
+  -- TRAIN (first half): n=1396  log-loss market mid 0.5230  50/50 blend 0.5244
+       bet when 50/50 blend edge > 2c after fee    n=    18 matches=   12   -0.69c ± 13.58c  t=-0.10
+       bet when 50/50 blend edge > 4c after fee    n=    10 matches=    4   -8.07c ± 5.89c  t=-2.69
+       bet when 50/50 blend edge > 7c after fee    n=     8 matches=    4   -9.82c ± 7.03c  t=-2.74
+  -- TEST (second half): n=1398  log-loss market mid 0.4874  50/50 blend 0.4902
+       bet when 50/50 blend edge > 2c after fee    n=    66 matches=   57   -2.70c ± 9.87c  t=-0.54
+       bet when 50/50 blend edge > 4c after fee    n=     6 matches=    5   -4.58c ± 6.78c  t=-1.32
+       bet when 50/50 blend edge > 7c after fee    n=     2 matches=    1   -1.07c ± 0.00c  t=-6164094824380508.00
+ best-of-5:
+   went the distance: n=510 win 0.122  market 0.138  model 0.161
+   straight sets: n=262 win 0.237  market 0.198  model 0.158
+  -- TRAIN (first half): n=383  log-loss market mid 0.3654  model 0.3796
+       bet when model edge > 2c after fee          n=    69 matches=   47   -8.39c ± 9.18c  t=-1.79
+       bet when model edge > 4c after fee          n=    40 matches=   35  -11.60c ± 13.11c  t=-1.73
+       bet when model edge > 7c after fee          n=    18 matches=   16   +8.25c ± 17.44c  t=+0.93
+  -- TEST (second half): n=389  log-loss market mid 0.3751  model 0.3980
+       bet when model edge > 2c after fee          n=   155 matches=   65   -6.51c ± 7.52c  t=-1.70
+       bet when model edge > 4c after fee          n=    79 matches=   52   -6.26c ± 10.14c  t=-1.21
+       bet when model edge > 7c after fee          n=    26 matches=   20  -10.88c ± 14.53c  t=-1.47
+  -- TRAIN (first half): n=383  log-loss market mid 0.3654  50/50 blend 0.3708
+       bet when 50/50 blend edge > 2c after fee    n=    15 matches=   13   -5.43c ± 20.51c  t=-0.52
+       bet when 50/50 blend edge > 4c after fee    n=     7 matches=    5   -7.06c ± 26.10c  t=-0.53
+       bet when 50/50 blend edge > 7c after fee    n=     3 matches=    2   -9.83c ± 19.16c  t=-1.01
+  -- TEST (second half): n=389  log-loss market mid 0.3751  50/50 blend 0.3835
+       bet when 50/50 blend edge > 2c after fee    n=    36 matches=   28   -9.10c ± 12.37c  t=-1.44
+       bet when 50/50 blend edge > 4c after fee    n=    13 matches=    9  -11.21c ± 15.26c  t=-1.44
+       bet when 50/50 blend edge > 7c after fee    n=     7 matches=    4   -3.04c ± 2.55c  t=-2.34
+
+===== 3. Set-1 winner vs anchor (T-10m) =====
+  967 events; fitted on train: logit(set1) = -0.10 + 1.14*logit(s)
+  avg set-1 price 0.500, model 0.481, win 0.479; mean spread 3.2c
+  -- TRAIN (first half): n=483  log-loss market mid 0.6272  anchor-model 0.6274
+       bet when anchor-model edge > 2c after fee   n=    47 matches=   47   +3.69c ± 12.92c  t=+0.56
+       bet when anchor-model edge > 4c after fee   n=    14 matches=   14   +8.19c ± 18.31c  t=+0.88
+       bet when anchor-model edge > 7c after fee   n=     3 matches=    3   -1.07c ± 0.00c  t=-3972291122568889.50
+  -- TEST (second half): n=484  log-loss market mid 0.6148  anchor-model 0.6260
+       bet when anchor-model edge > 2c after fee   n=    39 matches=   39   +5.05c ± 11.55c  t=+0.86
+       bet when anchor-model edge > 4c after fee   n=    17 matches=   17   +1.79c ± 11.44c  t=+0.31
+       bet when anchor-model edge > 7c after fee   n=    12 matches=   12   -0.14c ± 4.38c  t=-0.06
