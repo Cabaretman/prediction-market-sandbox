@@ -19,7 +19,7 @@ import urllib.parse
 
 BASE = "https://api.elections.kalshi.com/trade-api/v2"
 WINDOW_H = 12
-MIN_GAP = 0.12  # seconds between requests (~8 req/s)
+MIN_GAP = 0.06  # seconds between requests (~16 req/s)
 _last = [0.0]
 
 
