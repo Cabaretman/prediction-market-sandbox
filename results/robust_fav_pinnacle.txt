@@ -1,0 +1,10 @@
+Pinnacle closing odds, ATP main tour 2012-2025: 33045 matches
+
+no-vig 0.90-0.93: n=  956 won 92.573% vs 91.445%  losses 71 (fair exp 82, P(<=k)=0.116)
+     ROI at Pinnacle odds -1.16%   at best odds +0.48%
+no-vig 0.93-0.95: n=  549 won 95.811% vs 93.992%  losses 23 (fair exp 33, P(<=k)=0.039)
+     ROI at Pinnacle odds -0.48%   at best odds +0.89%
+no-vig 0.95-0.97: n=  466 won 96.137% vs 95.938%  losses 18 (fair exp 19, P(<=k)=0.474)
+     ROI at Pinnacle odds -1.99%   at best odds -0.83%
+no-vig 0.97-0.99: n=  136 won 97.059% vs 97.749%  losses 4 (fair exp 3, P(<=k)=0.807)
+     ROI at Pinnacle odds -1.95%   at best odds -1.15%

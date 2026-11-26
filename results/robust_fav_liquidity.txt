@@ -1,0 +1,32 @@
+396 matches; contracts traded at fav price 95-97c in the last hour pre-start:
+count       396.0
+mean       5382.0
+std       34528.0
+min           0.0
+10%           0.0
+25%          31.0
+50%         385.0
+75%        2197.0
+90%        9650.0
+max      660411.0
+
+'taker bought the favourite' contracts (= ask-side liquidity actually consumed):
+count       396.0
+mean       1455.0
+std       11934.0
+min           0.0
+10%           0.0
+25%           0.0
+50%          14.0
+75%         298.0
+90%        1521.0
+max      225636.0
+
+median by tier (taker-bought-fav contracts):
+series
+KXATPCHALLENGERMATCH     19.0
+KXATPMATCH              185.0
+KXITFMATCH                0.0
+KXITFWMATCH               0.0
+KXWTACHALLENGERMATCH     15.0
+KXWTAMATCH              164.0
