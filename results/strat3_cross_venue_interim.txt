@@ -1,0 +1,67 @@
+669 matched matches (Kalshi + Polymarket)
+
+97517 in-play minutes with both prices
+
+== a) Gap P-K distribution (cents) ==
+count    97517.00
+mean         1.96
+std          2.84
+min          0.00
+50%          1.00
+75%          2.50
+90%          5.00
+95%          7.00
+99%         13.00
+max         48.00
+  minutes with |gap|>=4c: 14955 (15.3%); still >=4c one minute later: 42%
+
+== b) Lead-lag (corr of one venue's last-minute move with the other's next move) ==
+  corr(dP[t-1->t], dK[t->t+1]) = -0.000   (Poly leads Kalshi?)
+  corr(dK[t-1->t], dP[t->t+1]) = +0.880   (Kalshi leads Poly?)
+  corr(gap_t, dK[t->t+1])      = -0.012   (Kalshi closes gap?)
+  corr(-gap_t, dP[t->t+1])     = +0.891   (Poly closes gap?)
+
+== c) Locked arbitrage, both legs taker (Poly half-spread assumed 1c) ==
+  minutes with locked profit > 0c: 14926 (15.31%) in 655 matches, avg 3.16c
+  minutes with locked profit > 1c: 10264 (10.53%) in 643 matches, avg 4.37c
+  minutes with locked profit > 2c: 7205 (7.39%) in 617 matches, avg 5.59c
+
+== d) Directional: take Kalshi towards Polymarket when |gap| big ==
+ |gap|>=2c:
+    mark at Kalshi mid +5m                         n=  6440 matches=  660   -2.17c ± 0.19c  t=-22.75
+    hold to settlement                             n=  6440 matches=  660   -0.92c ± 1.40c  t=-1.29
+ |gap|>=3c:
+    mark at Kalshi mid +5m                         n=  6129 matches=  655   -2.32c ± 0.21c  t=-22.01
+    hold to settlement                             n=  6129 matches=  655   -2.00c ± 1.19c  t=-3.30
+ |gap|>=5c:
+    mark at Kalshi mid +5m                         n=  5083 matches=  626   -2.29c ± 0.27c  t=-16.83
+    hold to settlement                             n=  5083 matches=  626   -2.75c ± 1.29c  t=-4.18
+ |gap|>=8c:
+    mark at Kalshi mid +5m                         n=  3036 matches=  531   -2.21c ± 0.50c  t=-8.73
+    hold to settlement                             n=  3036 matches=  531   -2.07c ± 1.72c  t=-2.36
+
+== f) Directional on POLYMARKET: take Poly towards Kalshi ==
+   (Poly entry = price + 1c assumed half-spread + taker fee; entry 1 min after signal; mark at Poly price, minus half-spread on exit)
+ |gap|>=2c:
+    mark at Poly price +1m (round trip, no exit fee) n=  6439 matches=  660   -2.70c ± 0.08c  t=-68.10
+    mark at Poly price +4m (round trip, no exit fee) n=  6390 matches=  660   -2.61c ± 0.17c  t=-29.86
+    hold to settlement                             n=  6439 matches=  660   -2.43c ± 1.43c  t=-3.32
+ |gap|>=3c:
+    mark at Poly price +1m (round trip, no exit fee) n=  6113 matches=  655   -2.67c ± 0.09c  t=-56.58
+    mark at Poly price +4m (round trip, no exit fee) n=  6070 matches=  655   -2.55c ± 0.19c  t=-26.96
+    hold to settlement                             n=  6113 matches=  655   -1.53c ± 1.22c  t=-2.46
+ |gap|>=5c:
+    mark at Poly price +1m (round trip, no exit fee) n=  5038 matches=  625   -2.65c ± 0.14c  t=-38.25
+    mark at Poly price +4m (round trip, no exit fee) n=  5008 matches=  623   -2.50c ± 0.25c  t=-19.55
+    hold to settlement                             n=  5038 matches=  625   -1.02c ± 1.18c  t=-1.70
+ |gap|>=8c:
+    mark at Poly price +1m (round trip, no exit fee) n=  2977 matches=  525   -2.42c ± 0.26c  t=-18.01
+    mark at Poly price +4m (round trip, no exit fee) n=  2955 matches=  525   -2.45c ± 0.49c  t=-9.85
+    hold to settlement                             n=  2977 matches=  525   -1.40c ± 1.62c  t=-1.69
+
+== e) Calibration: log-loss at sampled minutes (lower = better) ==
+  Kalshi mid 0.5806   Polymarket 0.5827   avg 0.5809
+== Upper bound: ZERO latency on Polymarket (enter at the stale print itself) ==
+  |gap|>=3c mark at Poly +1m                       n=  5841 matches=  626   +1.39c ± 0.08c  t=+33.33
+  |gap|>=5c mark at Poly +1m                       n=  4815 matches=  597   +3.81c ± 0.13c  t=+58.32
+  |gap|>=8c mark at Poly +1m                       n=  2850 matches=  506   +7.23c ± 0.23c  t=+61.66

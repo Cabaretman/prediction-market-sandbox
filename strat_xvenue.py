@@ -94,7 +94,7 @@ def main():
                 ev=m["event"], K=K[i], P=P[i], bid=bid[i], ask=ask[i], y=y,
                 dK_next=K[i + 1] - K[i], dP_prev=P[i] - P[i - 1] if not np.isnan(P[i - 1]) else np.nan,
                 dK_prev=K[i] - K[i - 1], dP_next=P[i + 1] - P[i] if not np.isnan(P[i + 1]) else np.nan,
-                K5=K[i + 5], gap_next=(P[i + 1] - K[i + 1]) if not np.isnan(P[i + 1]) else np.nan))
+                K5=K[i + 5], P1=P[i + 1], P2=P[i + 2], P5=P[i + 5], gap_next=(P[i + 1] - K[i + 1]) if not np.isnan(P[i + 1]) else np.nan))
     d = pd.DataFrame(rows)
     d["gap"] = d.P - d.K
     print(f"{len(d)} in-play minutes with both prices\n")
@@ -140,6 +140,26 @@ def main():
         print(f" |gap|>={100*thr:.0f}c:")
         ka.fmt("  mark at Kalshi mid +5m", k5 - px - fee, g.ev.to_numpy())
         ka.fmt("  hold to settlement", yy - px - fee, g.ev.to_numpy())
+    print()
+
+    print("== f) Directional on POLYMARKET: take Poly towards Kalshi ==")
+    print(f"   (Poly entry = price + {100*POLY_HALF:.0f}c assumed half-spread + taker fee; "
+          "entry 1 min after signal; mark at Poly price, minus half-spread on exit)")
+    for thr in [0.02, 0.03, 0.05, 0.08]:
+        g = d[d.gap.abs() >= thr].dropna(subset=["P1", "P2"]).copy()
+        g = g.groupby("ev").head(10)
+        up = g.gap < 0  # Kalshi above Poly -> buy YES on Poly
+        ent = np.where(up, g.P1, 1 - g.P1) + POLY_HALF  # 1-minute latency
+        fee = P_TAKER * ent * (1 - ent)
+        yy = np.where(up, g.y, 1 - g.y)
+        print(f" |gap|>={100*thr:.0f}c:")
+        for col, lab in [("P2", "+1m"), ("P5", "+4m")]:
+            v = g[col]
+            ok = ~v.isna()
+            ex = np.where(up, v, 1 - v) - POLY_HALF
+            ka.fmt(f"  mark at Poly price {lab} (round trip, no exit fee)",
+                   (ex - ent - fee)[ok], g.ev.to_numpy()[ok])
+        ka.fmt("  hold to settlement", yy - ent - fee, g.ev.to_numpy())
     print()
 
     print("== e) Calibration: log-loss at sampled minutes (lower = better) ==")

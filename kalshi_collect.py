@@ -40,7 +40,7 @@ def get(path, params=None):
             if e.code == 404:
                 return None
             raise
-        except (urllib.error.URLError, TimeoutError):
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError):
             time.sleep(2 ** attempt)
     raise RuntimeError(f"failed: {url}")
 

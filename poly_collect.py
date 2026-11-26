@@ -25,7 +25,7 @@ def get(url, params):
             time.sleep(w)
         _last[0] = time.time()
         try:
-            req = urllib.request.Request(url, headers={"Accept-Encoding": "gzip"})
+            req = urllib.request.Request(url, headers={"Accept-Encoding": "gzip", "User-Agent": "Mozilla/5.0 (research script)"})
             with urllib.request.urlopen(req, timeout=40) as r:
                 raw = r.read()
                 if r.headers.get("Content-Encoding") == "gzip":
@@ -128,7 +128,7 @@ def main():
                          "endTs": min(ct, gs + 12 * 3600), "fidelity": 1}) or {}
                 hist = [[x["t"], x["p"]] for x in h.get("history", [])]
                 out.write(json.dumps({
-                    "id": e["id"], "title": e["title"], "outcomes": outcomes,
+                    "id": e["id"], "title": e["title"], "outcomes": outcomes, "tokens": toks,
                     "winner": int(prices.index(1.0)), "start": gs, "closed": ct,
                     "volume": float(m.get("volume") or 0),
                     "fee": [m.get("makerBaseFee"), m.get("takerBaseFee"), m.get("feeType")],
