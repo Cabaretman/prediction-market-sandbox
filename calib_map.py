@@ -24,15 +24,15 @@ TIER = {"KXATPMATCH": "main", "KXWTAMATCH": "main",
         "KXITFMATCH": "itf", "KXITFWMATCH": "itf"}
 
 
-def snapshots():
+def snapshots(pattern="data/kalshi/KX*MATCH.jsonl", lead=10):
     rows = []
-    for m in ka.load("data/kalshi/KX*MATCH.jsonl"):
+    for m in ka.load(pattern):
         s = ka.match_start(m)
         if s is None:
             continue
         bid, ask, y = m["bid"], m["ask"], m["y"]
         n = len(bid)
-        pts = [("pre", s - 10)] + [("inplay", i) for i in range(s + 15, n - 3, 15)]
+        pts = [("pre", s - lead)] + [("inplay", i) for i in range(s + 15, n - 3, 15)]
         for phase, i in pts:
             if i < 0 or np.isnan(bid[i]) or np.isnan(ask[i]) or ask[i] - bid[i] > 0.04:
                 continue
@@ -41,7 +41,7 @@ def snapshots():
                 p = mid if side == 0 else 1 - mid
                 a = ask[i] if side == 0 else 1 - bid[i]
                 yy = y if side == 0 else 1 - y
-                rows.append((m["event"], TIER.get(m["series"], "other"), m["t0"], phase,
+                rows.append((m["event"], TIER.get(m["series"], m["series"]), m["t0"], phase,
                              p, a, yy, yy - a - TK * a * (1 - a)))
     d = pd.DataFrame(rows, columns=["ev", "tier", "t", "phase", "p", "ask", "y", "pnl"])
     d["bin"] = pd.cut(d.p, BINS)
