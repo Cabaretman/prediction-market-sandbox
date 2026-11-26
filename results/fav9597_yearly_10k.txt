@@ -1,0 +1,17 @@
+window 238 days, 369 entries -> ~1202 qualifying matches/year
+
+$10k bankroll, edge 2.1% of stake (backtest), per-bet SD ~20% of stake
+
+max stake per match    size cap                            $ staked/yr  E[P&L]/yr         1-SD range P(loss yr)
+$200                   unlimited size                     $    240,301 $    5,046  $  3,660 to $ 6,433        0%
+$200                   25% of traded at 95-97c            $     81,036 $    1,702  $    986 to $ 2,418        1%
+$200                   only what buyers took              $     62,770 $    1,318  $    669 to $ 1,967        2%
+
+$500                   unlimited size                     $    600,753 $   12,616  $  9,150 to $16,082        0%
+$500                   25% of traded at 95-97c            $    137,532 $    2,888  $  1,457 to $ 4,320        2%
+$500                   only what buyers took              $    112,488 $    2,362  $  1,033 to $ 3,692        4%
+
+$1,000                 unlimited size                     $  1,201,506 $   25,232  $ 18,299 to $32,164        0%
+$1,000                 25% of traded at 95-97c            $    192,407 $    4,041  $  1,753 to $ 6,328        4%
+$1,000                 only what buyers took              $    157,647 $    3,311  $  1,212 to $ 5,409        6%
+
