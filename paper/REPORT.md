@@ -1,6 +1,6 @@
 # Paper watcher: pre-match favourites at 95-97c
 
-_Updated 2026-11-26 15:20 UTC._ Rule: favourite mid 95-97c, spread <= 3c, 5-60 min before the official start, match not started; paper-buy at the real ask, up to $200 or the size offered at the ask.
+_Updated 2026-11-26 23:57 UTC._ Rule: favourite mid 95-97c, spread <= 3c, 5-60 min before the official start, match not started; paper-buy at the real ask, up to $200 or the size offered at the ask.
 
 | | |
 |---|---|
