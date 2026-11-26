@@ -1,0 +1,30 @@
+299 matches, 945472 trades, 208,792,812 contracts
+
+--- ALL in-play trades: 945472 trades, 208,792,812 contracts
+  spread captured vs prior mid (no fee)       +1.20c ± 0.23c  t=+10.12
+  maker P&L marked at mid +1m (after fee)     -0.01c ± 0.07c  t=-0.16
+  maker P&L marked at mid +5m (after fee)     -0.04c ± 0.26c  t=-0.29
+  maker P&L marked at mid +15m (after fee)    +0.40c ± 0.61c  t=+1.29
+  maker P&L held to settlement (after fee)    +4.26c ± 3.55c  t=+2.35
+--- taker order size <10 contracts: 303559 trades, 1,134,613 contracts
+  spread captured vs prior mid (no fee)       +1.57c ± 0.17c  t=+18.13
+  maker P&L marked at mid +1m (after fee)     +0.29c ± 0.08c  t=+7.22
+  maker P&L marked at mid +5m (after fee)     +0.60c ± 0.38c  t=+3.09
+  maker P&L marked at mid +15m (after fee)    +1.27c ± 0.98c  t=+2.53
+  maker P&L held to settlement (after fee)    +5.30c ± 4.21c  t=+2.47
+--- taker order size 10-100 contracts: 387281 trades, 16,472,616 contracts
+  spread captured vs prior mid (no fee)       +1.08c ± 0.14c  t=+14.72
+  maker P&L marked at mid +1m (after fee)     +0.25c ± 0.05c  t=+9.30
+  maker P&L marked at mid +5m (after fee)     +0.49c ± 0.23c  t=+4.06
+  maker P&L marked at mid +15m (after fee)    +1.12c ± 0.66c  t=+3.32
+  maker P&L held to settlement (after fee)    +5.41c ± 3.76c  t=+2.82
+--- taker order size 100-1000 contracts: 212593 trades, 70,885,308 contracts
+  spread captured vs prior mid (no fee)       +1.13c ± 0.19c  t=+11.49
+  maker P&L marked at mid +1m (after fee)     +0.10c ± 0.05c  t=+3.67
+  maker P&L marked at mid +5m (after fee)     +0.12c ± 0.19c  t=+1.21
+  maker P&L marked at mid +15m (after fee)    +0.56c ± 0.66c  t=+1.68
+  maker P&L held to settlement (after fee)    +3.62c ± 3.38c  t=+2.10
+--- taker order size >1000 contracts: 42039 trades, 120,300,275 contracts
+  spread captured vs prior mid (no fee)       +1.25c ± 0.30c  t=+8.28
+  maker P&L marked at mid +1m (after fee)     -0.11c ± 0.11c  t=-1.91
+  maker P&L marked at mid +5m (after fee)     -0.21c ± 0.36c  t=-1.14
