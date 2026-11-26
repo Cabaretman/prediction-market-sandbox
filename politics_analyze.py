@@ -38,8 +38,12 @@ def load():
         m = json.loads(l)
         meta[m["ticker"]] = m
     rows = []
+    seen = set()
     for l in open("data/politics/candles.jsonl"):
         c = json.loads(l)
+        if c["ticker"] in seen:   # two collectors may have written the same market
+            continue
+        seen.add(c["ticker"])
         m = meta.get(c["ticker"])
         if m is None or not c["candles"]:
             continue
