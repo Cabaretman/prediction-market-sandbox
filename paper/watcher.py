@@ -28,6 +28,7 @@ BASE = "https://api.elections.kalshi.com/trade-api/v2"
 SERIES = ["KXATPMATCH", "KXWTAMATCH", "KXATPCHALLENGERMATCH",
           "KXWTACHALLENGERMATCH", "KXITFMATCH", "KXITFWMATCH"]
 LO, HI, MAX_SPREAD = 0.95, 0.97, 0.03
+PREMATCH_STATUSES = {"not_started", "SCH", "scheduled"}
 WIN_EARLY, WIN_LATE = 60 * 60, 5 * 60      # seconds before the milestone start_date
 STAKE_DOLLARS = 200                        # paper stake cap per match
 TAKER = 0.07
@@ -131,7 +132,7 @@ def tick():
             if start is None:
                 continue
             dt = start - t
-            if not (WIN_LATE <= dt <= WIN_EARLY) or status != "not_started":
+            if not (WIN_LATE <= dt <= WIN_EARLY) or status not in PREMATCH_STATUSES:
                 continue
             n_window += 1
             # favourite = market with the higher last/bid price
