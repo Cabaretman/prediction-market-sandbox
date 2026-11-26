@@ -1,0 +1,14 @@
+checked 682 historical matches; milestone found for 100%
+detected start minus milestone start_date (minutes):
+count     682.0
+mean       -2.0
+std       197.0
+min      -362.0
+5%        -69.0
+25%       -44.0
+50%       -23.0
+75%       -11.0
+95%        37.0
+max      1967.0
+detected start earlier than milestone start by >5 min: 84.3%
+final statuses: {'not_started': 239, 'P': 213, 'live': 63, 'closed': 40, 'ended': 7, 'PC': 2, 'CO': 2, 'UC': 2, 'W': 2, 'CTC': 1}

@@ -1,0 +1,25 @@
+detected start minus scheduled start (minutes):
+count    32393.0
+mean        -3.0
+std        673.0
+min     -44935.0
+5%        -375.0
+25%       -260.0
+50%       -185.0
+75%        -71.0
+95%       1428.0
+max       4976.0
+share starting >10 min BEFORE scheduled: 80.8%
+
+watcher-rule entries: 3591; of which already in play at entry: 97.9%
+Traceback (most recent call last):
+  File "<stdin>", line 32, in <module>
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index([-2, -2, -2, -2, -2, -2, -2, -2, -2, -2,\n       ...\n       -2, -2, -2, -2, -2, -2, -2, -2, -2, -2],\n      dtype='object', length=3591)] are in the [columns]"

@@ -1,36 +1,36 @@
 == 1. Entry timing (band 95-97c, mid) ==
-  T- 1 min  won 98.554% vs 95.922%                 n=   415 matches=  415   +1.70c ± 1.19c  t=+2.80
-  T-10 min  won 98.737% vs 95.909%                 n=   396 matches=  396   +1.90c ± 1.14c  t=+3.26
-  T-30 min  won 98.565% vs 95.866%                 n=   418 matches=  418   +1.77c ± 1.25c  t=+2.79
-  T-60 min  won 98.515% vs 95.855%                 n=   404 matches=  404   +1.74c ± 1.21c  t=+2.82
+  T- 1 min  won 98.495% vs 95.904%                 n=   465 matches=  465   +1.64c ± 1.14c  t=+2.81
+  T-10 min  won 98.874% vs 95.892%                 n=   444 matches=  444   +2.04c ± 0.97c  t=+4.11
+  T-30 min  won 98.704% vs 95.860%                 n=   463 matches=  463   +1.91c ± 1.00c  t=+3.75
+  T-60 min  won 98.444% vs 95.848%                 n=   450 matches=  450   +1.67c ± 1.13c  t=+2.90
 
 == 2. Neighbouring bands (T-10 min) ==
-  93-95c won 94.885% vs 94.062%                    n=   567 matches=  567   -0.25c ± 1.76c  t=-0.28
-  94-97c won 97.681% vs 95.233%                    n=   690 matches=  690   +1.47c ± 1.06c  t=+2.72
-  95-96c won 98.425% vs 95.512%                    n=   254 matches=  254   +1.92c ± 1.48c  t=+2.54
-  96-97c won 99.497% vs 96.442%                    n=   199 matches=  199   +2.13c ± 0.98c  t=+4.25
-  95-97c won 98.737% vs 95.909%                    n=   396 matches=  396   +1.90c ± 1.06c  t=+3.53
-  95-98c won 98.658% vs 96.105%                    n=   447 matches=  447   +1.64c ± 1.05c  t=+3.06
-  97-99c won 99.065% vs 97.631%                    n=   107 matches=  107   +0.55c ± 1.75c  t=+0.61
+  93-95c won 94.703% vs 94.061%                    n=   623 matches=  623   -0.45c ± 1.60c  t=-0.55
+  94-97c won 97.641% vs 95.238%                    n=   763 matches=  763   +1.41c ± 1.07c  t=+2.59
+  95-96c won 98.639% vs 95.520%                    n=   294 matches=  294   +2.11c ± 1.30c  t=+3.19
+  96-97c won 99.543% vs 96.425%                    n=   219 matches=  219   +2.19c ± 0.96c  t=+4.48
+  95-97c won 98.874% vs 95.892%                    n=   444 matches=  444   +2.04c ± 0.97c  t=+4.11
+  95-98c won 98.798% vs 96.082%                    n=   499 matches=  499   +1.79c ± 0.95c  t=+3.68
+  97-99c won 99.130% vs 97.630%                    n=   115 matches=  115   +0.62c ± 1.60c  t=+0.76
 
 == 3. Luck: losses vs fair-price expectation (T-10, 95-97c) ==
-  n=396, losses=5, expected at fair price 16.2; P(<= 5 losses | fair) = 0.0010
-  break-even loss count after costs: ~12.5
+  n=444, losses=5, expected at fair price 18.2; P(<= 5 losses | fair) = 0.0002
+  break-even loss count after costs: ~14.1
 
   losses (check by hand):
                                       ev    mid   ask
 1740  KXATPCHALLENGERMATCH-26MAY17BOUKSH  0.965  0.97
-4512            KXWTAMATCH-26MAY24BIRPEG  0.955  0.96
-4883  KXWTACHALLENGERMATCH-26AUG24BOIJAU  0.955  0.96
-6552           KXITFWMATCH-26JUN03PEDSAN  0.950  0.96
-6771           KXITFWMATCH-26NOV18MAQDAN  0.950  0.96
+4849            KXWTAMATCH-26MAY24BIRPEG  0.955  0.96
+5220  KXWTACHALLENGERMATCH-26AUG24BOIJAU  0.955  0.96
+6889           KXITFWMATCH-26JUN03PEDSAN  0.950  0.96
+7108           KXITFWMATCH-26NOV18MAQDAN  0.950  0.96
 
 == 4. By tier and time half (T-10, 95-97c) ==
-  earlier half                                     n=   198 matches=  198   +1.64c ± 1.74c  t=+1.84
-  later half                                       n=   198 matches=  198   +2.16c ± 1.43c  t=+2.96
+  earlier half                                     n=   222 matches=  222   +1.82c ± 1.43c  t=+2.49
+  later half                                       n=   222 matches=  222   +2.26c ± 1.27c  t=+3.48
    KXATPCHALLENGERMATCH     n= 155 losses= 1 won 0.994 vs 0.959 P&L +2.53c
    KXATPMATCH               n=  43 losses= 0 won 1.000 vs 0.959 P&L +3.19c
-   KXITFMATCH               n=  45 losses= 0 won 1.000 vs 0.959 P&L +3.11c
-   KXITFWMATCH              n=  53 losses= 2 won 0.962 vs 0.959 P&L -0.71c
+   KXITFMATCH               n=  68 losses= 0 won 1.000 vs 0.959 P&L +3.13c
+   KXITFWMATCH              n=  78 losses= 2 won 0.974 vs 0.958 P&L +0.53c
    KXWTACHALLENGERMATCH     n=  45 losses= 1 won 0.978 vs 0.959 P&L +0.97c
    KXWTAMATCH               n=  55 losses= 1 won 0.982 vs 0.959 P&L +1.42c

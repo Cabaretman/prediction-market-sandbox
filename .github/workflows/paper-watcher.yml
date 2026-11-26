@@ -1,0 +1,33 @@
+name: paper-watcher
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paper-watcher
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run one watcher tick
+        run: python3 paper/watcher.py tick
+      - name: Commit paper log
+        run: |
+          git config user.name "paper-watcher"
+          git config user.email "paper-watcher@users.noreply.github.com"
+          git add paper/entries.jsonl paper/snapshots.jsonl paper/REPORT.md
+          git diff --cached --quiet || git commit -m "paper watcher: update log"
+          git pull --rebase --autostash || true
+          git push || true

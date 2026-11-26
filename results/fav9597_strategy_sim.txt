@@ -1,0 +1,15 @@
+444 qualifying matches over 513 days (ITF sampled ~26%)
+
+Start $1,000, stake 5% of bankroll per bet, capped by available size:
+  no size cap (unrealistic)                    bets 444  staked $   27,670  P&L $    +577 (+2.09% of staked)  max drawdown $145
+  max $200 per match                           bets 444  staked $   27,670  P&L $    +577 (+2.09% of staked)  max drawdown $145
+  25% of contracts traded at 95-97c (moderate) bets 364  staked $   15,446  P&L $    +303 (+1.96% of staked)  max drawdown $102
+  only what buyers actually took (conservative) bets 264  staked $   10,824  P&L $    +175 (+1.61% of staked)  max drawdown $96
+
+Start $5,000, stake 5%:
+  25% of traded at 95-97c                      bets 364  staked $   51,538  P&L $  +1,028 (+1.99% of staked)  max drawdown $394
+  only what buyers actually took               bets 264  staked $   38,053  P&L $    +577 (+1.52% of staked)  max drawdown $303
+
+annual capacity, conservative (buyers' actual takes): ~$439,211 deployable/yr -> ~$9,343/yr at +2.1% edge
+
+annual capacity, moderate (25% of traded): ~$415,344 deployable/yr -> ~$8,835/yr at +2.1% edge
