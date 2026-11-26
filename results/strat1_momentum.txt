@@ -1,0 +1,118 @@
+6486 matches
+
+===== D=0.1 W=5 =====
+--- ALL: 12664 shocks, 5343 matches, maker fill rate 52%
+  follow-side outcome minus mid (no costs)         n= 12664 matches= 5343   +0.82c ± 0.76c  t=+2.10
+  TAKER follow, hold to settlement                 n= 12664 matches= 5343   -1.57c ± 0.77c  t=-3.97
+  MAKER follow (filled only), hold                 n=  6589 matches= 3898   -4.27c ± 1.10c  t=-7.63
+--- KXATPMATCH: 10004 shocks, 4178 matches, maker fill rate 53%
+  follow-side outcome minus mid (no costs)         n= 10004 matches= 4178   +0.64c ± 0.82c  t=+1.53
+  TAKER follow, hold to settlement                 n= 10004 matches= 4178   -1.69c ± 0.84c  t=-3.93
+  MAKER follow (filled only), hold                 n=  5268 matches= 3080   -4.35c ± 1.21c  t=-7.07
+--- KXWTAMATCH: 2660 shocks, 1165 matches, maker fill rate 50%
+  follow-side outcome minus mid (no costs)         n=  2660 matches= 1165   +1.46c ± 1.63c  t=+1.76
+  TAKER follow, hold to settlement                 n=  2660 matches= 1165   -1.11c ± 1.74c  t=-1.25
+  MAKER follow (filled only), hold                 n=  1321 matches=  818   -3.98c ± 2.25c  t=-3.47
+--- volume tercile: low vol: 4224 shocks, 2189 matches, maker fill rate 46%
+  follow-side outcome minus mid (no costs)         n=  4224 matches= 2189   +2.23c ± 1.22c  t=+3.58
+  TAKER follow, hold to settlement                 n=  4224 matches= 2189   -0.40c ± 1.25c  t=-0.63
+  MAKER follow (filled only), hold                 n=  1958 matches= 1404   -3.61c ± 1.79c  t=-3.96
+--- volume tercile: mid vol: 4222 shocks, 1804 matches, maker fill rate 53%
+  follow-side outcome minus mid (no costs)         n=  4222 matches= 1804   +1.31c ± 1.23c  t=+2.09
+  TAKER follow, hold to settlement                 n=  4222 matches= 1804   -1.03c ± 1.24c  t=-1.63
+  MAKER follow (filled only), hold                 n=  2217 matches= 1340   -3.75c ± 1.83c  t=-4.01
+--- volume tercile: high vol: 4218 shocks, 1350 matches, maker fill rate 57%
+  follow-side outcome minus mid (no costs)         n=  4218 matches= 1350   -1.10c ± 1.40c  t=-1.54
+  TAKER follow, hold to settlement                 n=  4218 matches= 1350   -3.27c ± 1.32c  t=-4.86
+  MAKER follow (filled only), hold                 n=  2414 matches= 1154   -5.29c ± 1.98c  t=-5.24
+--- match phase: early: 1877 shocks, 1681 matches, maker fill rate 49%
+  follow-side outcome minus mid (no costs)         n=  1877 matches= 1681   -3.13c ± 2.17c  t=-2.83
+  TAKER follow, hold to settlement                 n=  1877 matches= 1681   -5.65c ± 2.11c  t=-5.24
+  MAKER follow (filled only), hold                 n=   912 matches=  861   -4.96c ± 3.11c  t=-3.13
+--- match phase: middle: 5768 shocks, 4292 matches, maker fill rate 50%
+  follow-side outcome minus mid (no costs)         n=  5768 matches= 4292   +1.90c ± 1.16c  t=+3.21
+  TAKER follow, hold to settlement                 n=  5768 matches= 4292   -0.50c ± 1.18c  t=-0.83
+  MAKER follow (filled only), hold                 n=  2900 matches= 2472   -2.38c ± 1.79c  t=-2.61
+--- match phase: late: 5019 shocks, 3661 matches, maker fill rate 55%
+  follow-side outcome minus mid (no costs)         n=  5019 matches= 3661   +1.05c ± 1.19c  t=+1.72
+  TAKER follow, hold to settlement                 n=  5019 matches= 3661   -1.26c ± 1.15c  t=-2.15
+  MAKER follow (filled only), hold                 n=  2777 matches= 2314   -6.02c ± 1.55c  t=-7.64
+--- price: follow side <35c: 2966 shocks, 2415 matches, maker fill rate 55%
+  follow-side outcome minus mid (no costs)         n=  2966 matches= 2415   +1.10c ± 1.80c  t=+1.20
+  TAKER follow, hold to settlement                 n=  2966 matches= 2415   -1.14c ± 1.79c  t=-1.25
+  MAKER follow (filled only), hold                 n=  1634 matches= 1453   -4.02c ± 2.02c  t=-3.90
+--- price: 35-65c: 5331 shocks, 3256 matches, maker fill rate 55%
+  follow-side outcome minus mid (no costs)         n=  5331 matches= 3256   +1.10c ± 1.30c  t=+1.67
+  TAKER follow, hold to settlement                 n=  5331 matches= 3256   -1.58c ± 1.29c  t=-2.41
+  MAKER follow (filled only), hold                 n=  2944 matches= 2196   -3.60c ± 1.74c  t=-4.05
+--- price: >65c: 4367 shocks, 3348 matches, maker fill rate 46%
+  follow-side outcome minus mid (no costs)         n=  4367 matches= 3348   +0.27c ± 1.35c  t=+0.39
+  TAKER follow, hold to settlement                 n=  4367 matches= 3348   -1.84c ± 1.32c  t=-2.72
+  MAKER follow (filled only), hold                 n=  2011 matches= 1706   -5.48c ± 2.07c  t=-5.18
+--- first half of period (in-sample): 6332 shocks, 2856 matches, maker fill rate 49%
+  follow-side outcome minus mid (no costs)         n=  6332 matches= 2856   +1.37c ± 1.04c  t=+2.59
+  TAKER follow, hold to settlement                 n=  6332 matches= 2856   -1.22c ± 1.02c  t=-2.36
+  MAKER follow (filled only), hold                 n=  3074 matches= 1969   -4.00c ± 1.59c  t=-4.93
+--- second half of period (out-of-sample): 6332 shocks, 2488 matches, maker fill rate 56%
+  follow-side outcome minus mid (no costs)         n=  6332 matches= 2488   +0.26c ± 1.04c  t=+0.49
+  TAKER follow, hold to settlement                 n=  6332 matches= 2488   -1.91c ± 1.04c  t=-3.59
+  MAKER follow (filled only), hold                 n=  3515 matches= 1929   -4.51c ± 1.47c  t=-6.03
+
+===== D=0.2 W=10 =====
+--- ALL: 8117 shocks, 4328 matches, maker fill rate 50%
+  follow-side outcome minus mid (no costs)         n=  8117 matches= 4328   +0.90c ± 0.91c  t=+1.94
+  TAKER follow, hold to settlement                 n=  8117 matches= 4328   -1.45c ± 0.85c  t=-3.34
+  MAKER follow (filled only), hold                 n=  4032 matches= 2774   -3.51c ± 1.35c  t=-5.09
+--- KXATPMATCH: 6416 shocks, 3403 matches, maker fill rate 50%
+  follow-side outcome minus mid (no costs)         n=  6416 matches= 3403   +0.69c ± 0.96c  t=+1.41
+  TAKER follow, hold to settlement                 n=  6416 matches= 3403   -1.60c ± 0.99c  t=-3.17
+  MAKER follow (filled only), hold                 n=  3224 matches= 2218   -3.96c ± 1.47c  t=-5.27
+--- KXWTAMATCH: 1701 shocks, 925 matches, maker fill rate 48%
+  follow-side outcome minus mid (no costs)         n=  1701 matches=  925   +1.70c ± 2.05c  t=+1.63
+  TAKER follow, hold to settlement                 n=  1701 matches=  925   -0.91c ± 2.13c  t=-0.83
+  MAKER follow (filled only), hold                 n=   808 matches=  556   -1.75c ± 3.18c  t=-1.08
+--- volume tercile: low vol: 2706 shocks, 1707 matches, maker fill rate 42%
+  follow-side outcome minus mid (no costs)         n=  2706 matches= 1707   +3.68c ± 1.54c  t=+4.68
+  TAKER follow, hold to settlement                 n=  2706 matches= 1707   +1.05c ± 1.57c  t=+1.31
+  MAKER follow (filled only), hold                 n=  1125 matches=  880   -1.88c ± 2.45c  t=-1.50
+--- volume tercile: mid vol: 2705 shocks, 1474 matches, maker fill rate 51%
+  follow-side outcome minus mid (no costs)         n=  2705 matches= 1474   +0.74c ± 1.59c  t=+0.91
+  TAKER follow, hold to settlement                 n=  2705 matches= 1474   -1.54c ± 1.50c  t=-2.01
+  MAKER follow (filled only), hold                 n=  1384 matches=  995   -2.60c ± 2.45c  t=-2.08
+--- volume tercile: high vol: 2706 shocks, 1147 matches, maker fill rate 56%
+  follow-side outcome minus mid (no costs)         n=  2706 matches= 1147   -1.72c ± 1.66c  t=-2.03
+  TAKER follow, hold to settlement                 n=  2706 matches= 1147   -3.87c ± 1.61c  t=-4.71
+  MAKER follow (filled only), hold                 n=  1523 matches=  899   -5.55c ± 2.50c  t=-4.36
+--- match phase: early: 807 shocks, 761 matches, maker fill rate 45%
+  follow-side outcome minus mid (no costs)         n=   807 matches=  761   -6.35c ± 3.33c  t=-3.74
+  TAKER follow, hold to settlement                 n=   807 matches=  761   -8.88c ± 3.24c  t=-5.38
+  MAKER follow (filled only), hold                 n=   360 matches=  347   -9.62c ± 5.50c  t=-3.43
+--- match phase: middle: 3677 shocks, 3086 matches, maker fill rate 48%
+  follow-side outcome minus mid (no costs)         n=  3677 matches= 3086   -0.22c ± 1.48c  t=-0.29
+  TAKER follow, hold to settlement                 n=  3677 matches= 3086   -2.60c ± 1.40c  t=-3.63
+  MAKER follow (filled only), hold                 n=  1782 matches= 1619   -3.33c ± 2.28c  t=-2.86
+--- match phase: late: 3633 shocks, 2831 matches, maker fill rate 52%
+  follow-side outcome minus mid (no costs)         n=  3633 matches= 2831   +3.65c ± 1.45c  t=+4.93
+  TAKER follow, hold to settlement                 n=  3633 matches= 2831   +1.36c ± 1.40c  t=+1.90
+  MAKER follow (filled only), hold                 n=  1890 matches= 1629   -2.53c ± 2.06c  t=-2.40
+--- price: follow side <35c: 807 shocks, 753 matches, maker fill rate 51%
+  follow-side outcome minus mid (no costs)         n=   807 matches=  753   -0.11c ± 3.26c  t=-0.06
+  TAKER follow, hold to settlement                 n=   807 matches=  753   -2.43c ± 3.13c  t=-1.53
+  MAKER follow (filled only), hold                 n=   415 matches=  406   -4.35c ± 4.06c  t=-2.10
+--- price: 35-65c: 3837 shocks, 2658 matches, maker fill rate 51%
+  follow-side outcome minus mid (no costs)         n=  3837 matches= 2658   +1.16c ± 1.51c  t=+1.51
+  TAKER follow, hold to settlement                 n=  3837 matches= 2658   -1.47c ± 1.47c  t=-1.96
+  MAKER follow (filled only), hold                 n=  1973 matches= 1588   -3.40c ± 2.08c  t=-3.21
+--- price: >65c: 3473 shocks, 2796 matches, maker fill rate 47%
+  follow-side outcome minus mid (no costs)         n=  3473 matches= 2796   +0.86c ± 1.36c  t=+1.24
+  TAKER follow, hold to settlement                 n=  3473 matches= 2796   -1.21c ± 1.39c  t=-1.70
+  MAKER follow (filled only), hold                 n=  1644 matches= 1437   -3.45c ± 2.37c  t=-2.86
+--- first half of period (in-sample): 4058 shocks, 2273 matches, maker fill rate 45%
+  follow-side outcome minus mid (no costs)         n=  4058 matches= 2273   +1.26c ± 1.31c  t=+1.89
+  TAKER follow, hold to settlement                 n=  4058 matches= 2273   -1.30c ± 1.26c  t=-2.02
+  MAKER follow (filled only), hold                 n=  1845 matches= 1340   -2.81c ± 2.06c  t=-2.67
+--- second half of period (out-of-sample): 4059 shocks, 2057 matches, maker fill rate 54%
+  follow-side outcome minus mid (no costs)         n=  4059 matches= 2057   +0.55c ± 1.28c  t=+0.84
+  TAKER follow, hold to settlement                 n=  4059 matches= 2057   -1.60c ± 1.29c  t=-2.44
+  MAKER follow (filled only), hold                 n=  2187 matches= 1435   -4.11c ± 1.89c  t=-4.26
+

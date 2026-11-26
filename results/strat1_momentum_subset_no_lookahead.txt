@@ -1,0 +1,56 @@
+
+D=0.1 W=5: low volume-so-far & >=90 min into match
+--- first half: 1100 shocks, 851 matches, maker fill rate 43%
+  follow-side outcome minus mid (no costs)         n=  1100 matches=  851   +2.75c ± 2.54c  t=+2.13
+  TAKER follow, hold to settlement                 n=  1100 matches=  851   +0.06c ± 2.56c  t=+0.05
+  MAKER follow (filled only), hold                 n=   476 matches=  435   -4.87c ± 3.94c  t=-2.42
+--- second half: 183 shocks, 165 matches, maker fill rate 47%
+  follow-side outcome minus mid (no costs)         n=   183 matches=  165   +5.87c ± 5.69c  t=+2.02
+  TAKER follow, hold to settlement                 n=   183 matches=  165   +3.53c ± 6.11c  t=+1.13
+  MAKER follow (filled only), hold                 n=    86 matches=   84   +4.50c ± 8.85c  t=+1.00
+--- all >=90min (any volume): 7689 shocks, 4048 matches, maker fill rate 55%
+  follow-side outcome minus mid (no costs)         n=  7689 matches= 4048   +0.82c ± 0.92c  t=+1.73
+  TAKER follow, hold to settlement                 n=  7689 matches= 4048   -1.52c ± 1.02c  t=-2.92
+  MAKER follow (filled only), hold                 n=  4204 matches= 2871   -5.46c ± 1.44c  t=-7.43
+
+D=0.15 W=10: low volume-so-far & >=90 min into match
+--- first half: 1034 shocks, 810 matches, maker fill rate 41%
+  follow-side outcome minus mid (no costs)         n=  1034 matches=  810   +0.90c ± 2.64c  t=+0.67
+  TAKER follow, hold to settlement                 n=  1034 matches=  810   -1.78c ± 2.76c  t=-1.26
+  MAKER follow (filled only), hold                 n=   425 matches=  390   -6.19c ± 4.36c  t=-2.78
+--- second half: 173 shocks, 154 matches, maker fill rate 41%
+  follow-side outcome minus mid (no costs)         n=   173 matches=  154   +4.00c ± 6.58c  t=+1.19
+  TAKER follow, hold to settlement                 n=   173 matches=  154   +1.73c ± 6.15c  t=+0.55
+  MAKER follow (filled only), hold                 n=    71 matches=   68   -1.82c ± 10.37c  t=-0.34
+--- all >=90min (any volume): 6800 shocks, 3750 matches, maker fill rate 52%
+  follow-side outcome minus mid (no costs)         n=  6800 matches= 3750   +0.37c ± 1.03c  t=+0.70
+  TAKER follow, hold to settlement                 n=  6800 matches= 3750   -1.96c ± 1.07c  t=-3.57
+  MAKER follow (filled only), hold                 n=  3505 matches= 2460   -4.64c ± 1.58c  t=-5.74
+
+D=0.2 W=10: low volume-so-far & >=90 min into match
+--- first half: 900 shocks, 721 matches, maker fill rate 40%
+  follow-side outcome minus mid (no costs)         n=   900 matches=  721   +1.93c ± 2.92c  t=+1.30
+  TAKER follow, hold to settlement                 n=   900 matches=  721   -0.79c ± 2.86c  t=-0.54
+  MAKER follow (filled only), hold                 n=   361 matches=  333   -3.70c ± 4.48c  t=-1.62
+--- second half: 164 shocks, 148 matches, maker fill rate 51%
+  follow-side outcome minus mid (no costs)         n=   164 matches=  148   +4.10c ± 6.38c  t=+1.26
+  TAKER follow, hold to settlement                 n=   164 matches=  148   +1.78c ± 6.58c  t=+0.53
+  MAKER follow (filled only), hold                 n=    84 matches=   78   +2.25c ± 9.19c  t=+0.48
+--- all >=90min (any volume): 5496 shocks, 3281 matches, maker fill rate 52%
+  follow-side outcome minus mid (no costs)         n=  5496 matches= 3281   +0.36c ± 1.16c  t=+0.61
+  TAKER follow, hold to settlement                 n=  5496 matches= 3281   -1.96c ± 1.10c  t=-3.49
+  MAKER follow (filled only), hold                 n=  2880 matches= 2113   -4.51c ± 1.71c  t=-5.17
+
+D=0.25 W=10: low volume-so-far & >=90 min into match
+--- first half: 742 shocks, 614 matches, maker fill rate 41%
+  follow-side outcome minus mid (no costs)         n=   742 matches=  614   +3.06c ± 3.20c  t=+1.88
+  TAKER follow, hold to settlement                 n=   742 matches=  614   +0.33c ± 3.32c  t=+0.19
+  MAKER follow (filled only), hold                 n=   301 matches=  273   -4.21c ± 5.07c  t=-1.63
+--- second half: 141 shocks, 134 matches, maker fill rate 51%
+  follow-side outcome minus mid (no costs)         n=   141 matches=  134   +4.62c ± 7.45c  t=+1.22
+  TAKER follow, hold to settlement                 n=   141 matches=  134   +2.32c ± 7.30c  t=+0.62
+  MAKER follow (filled only), hold                 n=    72 matches=   72   +5.13c ± 10.12c  t=+0.99
+--- all >=90min (any volume): 4127 shocks, 2769 matches, maker fill rate 52%
+  follow-side outcome minus mid (no costs)         n=  4127 matches= 2769   +1.67c ± 1.32c  t=+2.48
+  TAKER follow, hold to settlement                 n=  4127 matches= 2769   -0.66c ± 1.32c  t=-0.98
+  MAKER follow (filled only), hold                 n=  2160 matches= 1716   -2.64c ± 2.05c  t=-2.52
