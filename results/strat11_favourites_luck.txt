@@ -1,0 +1,5 @@
+in-play favourite bets: n=19019, win rate 0.905, avg return per bet -0.98%
+stake 100% of bankroll: P(reach $300 from $25 within 200 bets) = 5.9%, P(fall below $1) = 94.1%, median bankroll after 200 bets $0
+stake  50% of bankroll: P(reach $300 from $25 within 200 bets) = 3.0%, P(fall below $1) = 77.8%, median bankroll after 200 bets $1
+stake  20% of bankroll: P(reach $300 from $25 within 200 bets) = 0.0%, P(fall below $1) = 1.9%, median bankroll after 200 bets $11
+stake   5% of bankroll: P(reach $300 from $25 within 200 bets) = 0.0%, P(fall below $1) = 0.0%, median bankroll after 200 bets $22

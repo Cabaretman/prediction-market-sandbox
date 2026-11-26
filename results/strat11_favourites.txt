@@ -1,0 +1,36 @@
+20537 entry events (19020 matches); pre 1518, in-play 19019
+
+== Overall (all entries) ==
+ [inplay] win 0.905 vs price 0.902
+     TAKER                                         n= 19019 matches=19019   -0.89c ± 0.41c  t=-4.25
+     MAKER (fill rate 49%)                         n=  9239 matches= 9239   -2.48c ± 0.71c  t=-6.85
+ [pre] win 0.939 vs price 0.921
+     TAKER                                         n=  1518 matches= 1518   +0.57c ± 1.24c  t=+0.90
+     MAKER (fill rate 2%)                          n=    28 matches=   28   -2.84c ± 11.73c  t=-0.47
+
+== Single-factor breakdown (TRAIN | TEST), taker / maker ==
+ -- series
+    ATP                taker +0.25c(n=2927) | -2.16c(n=1829)    maker -0.18c(n=1229) | -3.58c(n=942)
+    ATPCHALLENGER      taker -0.65c(n=4497) | -0.75c(n=6400)    maker -2.37c(n=1995) | -2.90c(n=2951)
+    WTA                taker -1.40c(n=2844) | -0.60c(n=2040)    maker -2.51c(n=1189) | -3.24c(n=961)
+ -- who
+    comeback(pre<50)   taker -1.07c(n=2300) | -0.90c(n=2271)    maker -3.44c(n=1231) | -3.45c(n=1354)
+    mild fav(50-75)    taker -0.14c(n=4533) | -1.73c(n=4502)    maker -0.88c(n=2304) | -3.30c(n=2517)
+    big fav(>75)       taker -0.89c(n=3435) | -0.04c(n=3496)    maker -1.91c(n=878) | -2.09c(n=983)
+ -- when
+    pre                taker -0.17c(n=729) | +1.26c(n=789)    maker +1.47c(n=15) | -7.82c(n=13)
+    <45m               taker -1.67c(n=1704) | -0.13c(n=1726)    maker -6.44c(n=380) | -1.29c(n=468)
+    45-90m             taker -0.76c(n=2754) | -2.20c(n=2730)    maker -0.68c(n=1343) | -3.21c(n=1447)
+    >90m               taker -0.21c(n=5081) | -0.94c(n=5024)    maker -1.72c(n=2675) | -3.31c(n=2926)
+ -- how
+    creep(<3c/10m)     taker -0.01c(n=1952) | +0.53c(n=1970)    maker -1.53c(n=235) | -2.81c(n=240)
+    move(3-10c)        taker -1.21c(n=2575) | -0.97c(n=2740)    maker -1.85c(n=1240) | -2.03c(n=1432)
+    surge(>10c)        taker -0.52c(n=5741) | -1.50c(n=5559)    maker -1.80c(n=2938) | -3.60c(n=3182)
+ -- lvl
+    88-92              taker -0.66c(n=8116) | -1.01c(n=8362)    maker -1.85c(n=3750) | -3.11c(n=4212)
+    92-95              taker -0.25c(n=1689) | -1.41c(n=1472)    maker -1.33c(n=545) | -3.49c(n=544)
+    95-97              taker -0.80c(n=463) | +1.33c(n=435)    maker -2.22c(n=118) | -0.56c(n=98)
+
+== Segment search on TRAIN: 209 candidate segments (n>=150) ==
+   expected false positives at t>2 by chance: ~5; found 0
+   Top segments on TRAIN -> TEST:
